@@ -1,0 +1,22 @@
+#footer{background:rgb(89, 155, 214);border-top:none;padding:26px 0 0;font-size:0.9em;}
+#footer p{line-height: 20px;margin-bottom:10px;}
+.pad-width{margin-left:25%;}
+.pad-width:after,.pad-width:before{content:"";display: table;}
+.pad-width:after{clear:both;}
+.fat-footer{float:left;width:12%;margin-right:4px;text-align:center;}
+.fat-footer:last-child{margin-right:0;}
+.fat-footer ul li{text-align: center;}
+#footer h5, #footer h5 a{color:rgb(255,255,255);font-size:24px;}
+#footer a{color:rgb(255,255,255);font-size:18px;}
+#footer h5 a:hover,#footer a:hover{color:#4cd453;}
+#footer .container_footer .row > div{margin-bottom:35px;}
+.information{background: #164533;padding:40px 0 0;border-top:5px solid #fdd000;}
+#footer .information h5{color:#fdd000;}
+.information .information-logo{width:217px;}
+.information p{color:#fff;}
+.information .service{padding:3px;text-align:left;color:#fff;}
+.information .service span{font-size:2em;display: block;margin-bottom:10px;}
+#footer .footer-copyright{border-top:0px; background:#fff;color:#777;margin-top:0;}
+#footer .footer-copyright p{color:#777;}
+#footer .language a{color:#777;}
+#footer .language a:hover{color:#adadad;}
