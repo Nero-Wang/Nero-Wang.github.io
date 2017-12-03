@@ -24,6 +24,76 @@
 <link rel="stylesheet" href="/css/theme/theme.css">
 <link rel="stylesheet" href="/css/style.css">
 <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        #crouton ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            list-style: none;
+        }
+
+        #crouton li {
+            float: left;
+            margin: 0 10px;
+        }
+
+        #crouton a {
+            background: #ddd;
+            padding: .7em 1em;            
+            float: left;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+            position: relative;
+        }
+
+        #crouton li:first-child a {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #crouton li:last-child a {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        #crouton a:hover {
+            background: #99db76;
+        }
+
+        #crouton li:not(:first-child)>a::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -1.5em;
+            border-width: 1.5em 0 1.5em 1em;
+            border-style: solid;
+            border-color: #ddd #ddd #ddd transparent;
+            left: -1em;
+        }
+
+        #crouton li:not(:first-child)>a:hover::before {
+            border-color: #99db76 #99db76 #99db76 transparent;
+        }
+
+        #crouton li:not(:last-child)>a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -1.5em;
+            border-top: 1.5em solid transparent;
+            border-bottom: 1.5em solid transparent;
+            border-left: 1em solid #ddd;
+            right: -1em;
+        }
+
+        #crouton li:not(:last-child)>a:hover::after {
+            border-left-color: #99db76;
+        }
     .example-image {
         width: 3rem;
         border-radius: 4px;
@@ -73,51 +143,45 @@
         </div>
     </nav>
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color:rgb(255,218,68);">
-        <div class="container" style="max-width:1140px">
-            <a class="navbar-brand" href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html" style="margin-right:-15%">
-                <img class="" src="images/logo/丹丹logo1.png" alt="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:12%">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <h3>最新消息</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <h3>美味丹丹</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <h3>線上訂餐</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <h3>分店資訊</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <h3>人才招募</h3>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">
-                            <h3>加盟丹丹</h3>
-                        </a>
-                    </li>
-                </ul>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:rgb(255,218,68);">
+            <div class="container" style="max-width:1140px">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html" style="margin-right:-7%">
+                    <img class="" src="images/logo/丹丹logo1.png" alt="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:7%;font-size:16px">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <div id="crouton">
+                                <ul>
+                                    <li>
+                                        <a href="#">最新消息</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">美味丹丹</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://127.0.0.1:5500/Order%20online.html">線上點餐</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://127.0.0.1:5500/Branch%20information.html">分店資訊</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://127.0.0.1:5500/recruiting.html">人才招募</a>
+                                    </li>
+                                    <li>
+                                        <a href="http://127.0.0.1:5500/Join.html">加盟丹丹</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     <!-- 內容 -->
 
     <div class="container" style="line-height:50px; padding-top:1.5%">
@@ -578,13 +642,14 @@
         </tr>
     </div>
 
+    
     <!-- footer -->
     <section>
         <article>
             <footer id="footer">
                 <div class="container_footer">
                     <div class="row">
-                        <div class="col-lg-9 col-md-8 mb-md d-none d-md-block">
+                        <div class="col-lg-8 col-md-8 mb-md d-none d-md-block">
                             <div class="pad-width">
                                 <div class="fat-footer">
                                     <h5>
@@ -628,67 +693,67 @@
                                 <div class="fat-footer">
                                     <h5>
                                         <strong>
-                                            <a href="http://127.0.0.1:5500/bootstrap-%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9.html" title="線上點餐" style="color: rgb(234,85,30);">線上點餐</a>
+                                            <a href="http://127.0.0.1:5500/Order%20online.html" title="線上點餐" style="color: rgb(234,85,30);">線上點餐</a>
                                         </strong>
                                     </h5>
                                     <ul class="list-unstyled">
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstrap-%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9.html" title="預定取餐">預定取餐</a>
+                                        <a href="http://127.0.0.1:5500/Order%20online.html" title="預定取餐">預定取餐</a>
                                         </br>
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstrap-%E7%94%A2%E5%93%81%E4%BB%8B%E7%B4%B9.html" title="外送自取">外送自取</a>
+                                        <a href="http://127.0.0.1:5500/Order%20online.html" title="外送自取">外送自取</a>
                                         </br>
                                 </div>
                                 <div class="fat-footer">
                                     <h5>
                                         <strong>
-                                            <a href="http://127.0.0.1:5500/bootstarp-%E5%8A%A0%E5%85%A5%E6%88%91%E5%80%91.html" title="分店資訊" style="color: rgb(234,85,30);">分店資訊</a>
+                                            <a href="http://127.0.0.1:5500/Branch%20information.html" title="分店資訊" style="color: rgb(234,85,30);">分店資訊</a>
                                         </strong>
                                     </h5>
                                     <ul class="list-unstyled">
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstarp-%E5%8A%A0%E5%85%A5%E6%88%91%E5%80%91.html" title="全國門市">全國門市</a>
+                                        <a href="http://127.0.0.1:5500/Branch%20information.html" title="全國門市">全國門市</a>
                                         </br>
                                     </ul>
                                 </div>
                                 <div class="fat-footer">
                                     <h5>
                                         <strong>
-                                            <a href="http://127.0.0.1:5500/bootstarp-%E9%96%80%E5%B8%82%E6%93%9A%E9%BB%9E.html#" title="人才招募" style="color: rgb(234,85,30);">人才招募</a>
+                                            <a href="http://127.0.0.1:5500/recruiting.html" title="人才招募" style="color: rgb(234,85,30);">人才招募</a>
                                         </strong>
                                     </h5>
                                     <ul class="list-unstyled">
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstarp-%E9%96%80%E5%B8%82%E6%93%9A%E9%BB%9E.html#" title="培育人才">培育人才</a>
+                                        <a href="http://127.0.0.1:5500/recruiting.html" title="培育人才">培育人才</a>
                                         </br>
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstarp-%E9%96%80%E5%B8%82%E6%93%9A%E9%BB%9E.html#" title="職涯規劃">職涯規劃</a>
+                                        <a href="http://127.0.0.1:5500/recruiting.html" title="職涯規劃">職涯規劃</a>
                                         </br>
                                     </ul>
                                 </div>
                                 <div class="fat-footer">
                                     <h5>
                                         <strong>
-                                            <a href="http://127.0.0.1:5500/bootstarp-%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.html#" title="加盟丹丹" style="color: rgb(234,85,30);">加盟丹丹</a>
+                                            <a href="http://127.0.0.1:5500/Join.html" title="加盟丹丹" style="color: rgb(234,85,30);">加盟丹丹</a>
                                         </strong>
                                     </h5>
                                     <ul class="list-unstyled">
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstarp-%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.html#" title="品牌優勢">品牌優勢</a>
+                                        <a href="http://127.0.0.1:5500/Join.html" title="品牌優勢">品牌優勢</a>
                                         </br>
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstarp-%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.html#" title="加盟流程">加盟流程</a>
+                                        <a href="http://127.0.0.1:5500/Join.html" title="加盟流程">加盟流程</a>
                                         </br>
                                         <br>
-                                        <a href="http://127.0.0.1:5500/bootstarp-%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91.html#" title="聯絡我們">聯絡我們</a>
+                                        <a href="http://127.0.0.1:5500/Join.html" title="聯絡我們">聯絡我們</a>
                                         </br>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-12 mb-md " style="text-align:center;">
-                            <a href="http://127.0.0.1:5500/bootstrap-%E9%A6%96%E9%A0%81.html">
-                                <img class="nav_logo" src="images/logo/丹丹logo2.png" alt="http://127.0.0.1:5500/bootstrap-%E9%A6%96%E9%A0%81.html">
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-md " style="text-align:center;">
+                            <a href="http://127.0.0.1:5500/index.html">
+                                <img class="nav_logo" src="images/logo/丹丹logo2.png" alt="http://127.0.0.1:5500/index.html">
                                 <h3>0800-000-000</h3>
                             </a>
                         </div>
