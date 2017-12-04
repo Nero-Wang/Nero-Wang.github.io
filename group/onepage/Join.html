@@ -111,6 +111,16 @@
             text-align: center;
             margin-bottom: 30px;
         }
+
+        @media screen and (max-width:768px) {
+        
+        .nav-desktop {
+            display: none;
+        }
+        .nav-mobile {
+            display: block;
+        }
+    }
     </style>
 
 
@@ -118,7 +128,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color:rgb(233,85,19);">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark nav-desktop" style="background-color:rgb(233,85,19);">
         <div class="container">
             <a class="navbar-brand" href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html">
                 <img class="" src="" alt="">
@@ -145,7 +155,7 @@
         </div>
     </nav>
 
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color:rgb(255,218,68);">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark nav-mobile" style="background-color:rgb(255,218,68);">
         <div class="container" style="max-width:1140px">
             <a class="navbar-brand" href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html" style="margin-right:-15%">
                 <img class="" src="images/logo/丹丹logo1.png" alt="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html">
