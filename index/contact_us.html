@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>加入我們</title>
+    <title>聯絡我們</title>
     <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/css/footer.css">   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="/css/theme/theme-shop.css">
     <link rel="stylesheet" href="/css/theme/theme.css">
     <link rel="stylesheet" href="/css/style.css"> 
-    <style>      
+    <style>
         .example-image {
             width: 10rem;
             border-radius: 4px;
         }
 
         body{
+            padding-top:82.5px;
             height: 100%;
         }
 
@@ -43,23 +44,29 @@
         .nav-item, .nav-link, h2 {
             font-size: 26px;
         }
-        
         /* 內容 */
-        
-        .contater, h1{
-            text-align:center;
+        .contater{
+            max-width:1130px;   
+            margin:0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }       
+        .card {
+            border:none;
         }
-
+       
+        
+        
         /* footer */
         header, nav, section, article, footer {
-            display: block;
+          display: block;
         }
         header, nav, section, article, footer {
-            color: white;
+          color: white;
         }
         header, footer {
-            text-align: center;
-            width: 100%;
+          text-align: center;
+          width: 100%;
         }
         .nav_logo{
             position:absolute;
@@ -71,11 +78,12 @@
             position: relative;
             left:15%;
         }
+
     </style>
 </head>
 <body>
- <!-- navbar -->
- <nav class="navbar sticky-top navbar-expand-xl navbar-dark" style="background-color:rgb(89, 155, 214);">
+<!-- navbar -->
+<nav class="navbar fixed-top navbar-expand-xl navbar-dark" style="background-color:rgb(89, 155, 214);">
     <div class="container"> 
         <a class="navbar-brand" href="http://127.0.0.1:5500/bootstrap-%E9%A6%96%E9%A0%81.html"><img class="example-image" src="images/logo/logo.png" alt="http://127.0.0.1:5500/bootstrap-%E9%A6%96%E9%A0%81.html">
         </a>
@@ -85,48 +93,69 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">           
             <ul class="navbar-nav ml-auto">             
                 <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:5500/About%20idea.html"><h2>關於我們</h2></a>
+                    <a class="nav-link" href="About_idea.html"><h2>關於我們</h2></a>
                 </li>
-                    <a class="nav-link" href="http://127.0.0.1:5500/About%20idea.html"><h2>活動消息</h2></a>
+                    <a class="nav-link" href="About_idea.html"><h2>活動消息</h2></a>
                 </li>
-                    <a class="nav-link" href="http://127.0.0.1:5500/product%20description.html"><h2>產品介紹</h2></a>
+                    <a class="nav-link" href="product_description.html"><h2>產品介紹</h2></a>
                 </li>
-                    <a class="nav-link" href="http://127.0.0.1:5500/join%20us.html"><h2>加入我們</h2></a>
+                    <a class="nav-link" href="join_us.html"><h2>加入我們</h2></a>
                 </li>
-                    <a class="nav-link" href="http://127.0.0.1:5500/Store%20stronghold.html"><h2>門市據點</h2></a>
+                    <a class="nav-link" href="Store_stronghold.html"><h2>門市據點</h2></a>
                 </li>
-                    <a class="nav-link" href="http://127.0.0.1:5500/contact%20us.html"><h2>聯絡我們</h2></a>
+                    <a class="nav-link" href="contact_us.html"><h2>聯絡我們</h2></a>
                 </li>           
             </ul>
         </div>
     </div>
 </nav>
-    
 
 <div class="container">
-    <div class="row justify-content-end">
-        <div class="col-md-12 col-sm-12 mb-md">
-            <div class="col-xs-1">
-                <h1>菁英招募</h1>
-                <a href="" class="" title="">
-                    <img src="/images/Join us on/職位表.png" class="img-responsive img-rounded" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="row">
-        <div class="col-md-12 col-sm-12 mb-md">
-            <div class="col-xs-1">
-                <h1>職涯規劃</h1>
-                <a href="" class="" title="">
-                    <img src="/images/Join us on/Career planning01.png" class="img-responsive img-rounded" alt="">
-                    <img src="/images/Join us on/Career planning02.png" class="img-responsive img-rounded" alt="">
-                </a>
+        <div class="col-md-4 col-sm-6 col-xs-6 mb-md">
+            <div class="card" style="">
+                <img class="card-img-top" src="/images/office building/02.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h1>台中總部</h1>
+                        <br>地址 台中市西屯區台灣大道三段99號</br>
+                        <br>電話 04-2228-9111</br>
+                        <br>營業時間 08:00~17:00</br>
+                        <br></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 mb-md">
+            <div class="card" style="">
+                <img class="card-img-top" src="/images/office building/02.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h1>北部分部</h1>
+                        <br>地址 台北市信義區市府路號</br>
+                        <br>電話 02-2720-8889</br>
+                        <br>營業時間- 08:00~17:00</br>
+                        <br></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6 mb-md">
+            <div class="card" style="">
+                <img class="card-img-top" src="/images/office building/02.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h1>南部分部</h1>
+                        <br>地址 高雄市苓雅區四維三路2號</br>
+                        <br>電話 07-336-8333</br>
+                        <br>營業時間 08:00~17:00</br>
+                        <br></br>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>       
+</div>
 
 <section>
     <article>
@@ -134,7 +163,7 @@
             <div class="container_footer">
                 <div class="row">
                     <div class="col-md-3 col-sm-12 mb-md">
-                            <a href="http://127.0.0.1:5500/bootstrap-%E9%A6%96%E9%A0%81.html">
+                            <a href="">
                                 <img class="nav_logo" src="images/logo/logo.png" alt="http://127.0.0.1:5500/bootstrap-%E9%A6%96%E9%A0%81.html">
                             </a>
                     </div>
@@ -144,12 +173,12 @@
                             <div class="fat-footer">
                                 <h5>
                                     <strong>
-                                        <a href="http://127.0.0.1:5500/About%20idea.html" title="關於理念">關於理念</a>
+                                        <a href="About_idea.html" title="關於理念">關於理念</a>
                                     </strong>
                                 </h5>
                                 <ul class="list-unstyled">
                                     <br>
-                                    <a href="http://127.0.0.1:5500/About%20idea.html" title="品牌故事">品牌故事</a>
+                                    <a href="About_idea.html" title="品牌故事">品牌故事</a>
                                     </br>
                                 </ul>
                             </div>
@@ -163,72 +192,72 @@
                             <div class="fat-footer">
                                 <h5>
                                     <strong>
-                                        <a href="http://127.0.0.1:5500/product%20description.html" title="產品介紹">產品介紹</a>
+                                        <a href="product_description.html" title="產品介紹">產品介紹</a>
                                     </strong>
                                 </h5>
                                 <ul class="list-unstyled">
                                     <br>
-                                    <a href="http://127.0.0.1:5500/product%20description.html" title="西式早餐">西式早餐</a>
+                                    <a href="product_description.html" title="西式早餐">西式早餐</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/product%20description.html" title="中式早餐">中式早餐</a>
+                                    <a href="product_description.html" title="中式早餐">中式早餐</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/product%20description.html" title="精選套餐">精選套餐</a>
+                                    <a href="product_description.html" title="精選套餐">精選套餐</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/product%20description.html" title="午餐時光">午餐時光</a>
+                                    <a href="product_description.html" title="午餐時光">午餐時光</a>
                                     </br>
                                 </ul>
                             </div>
                             <div class="fat-footer">
                                 <h5>
                                     <strong>
-                                        <a href="http://127.0.0.1:5500/join%20us.html" title="加入我們">加入我們</a>
+                                        <a href="join_us.html" title="加入我們">加入我們</a>
                                     </strong>
                                 </h5>
                                 <ul class="list-unstyled">
                                     <br>
-                                    <a href="http://127.0.0.1:5500/join%20us.html" title="菁英招募">菁英招募</a>
+                                    <a href="oin%20us.html" title="菁英招募">菁英招募</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/join%20us.html" title="職涯規劃">職涯規劃</a>
+                                    <a href="join_us.html" title="職涯規劃">職涯規劃</a>
                                     </br>
                                 </ul>
                             </div>
                             <div class="fat-footer">
                                 <h5>
                                     <strong>
-                                        <a href="http://127.0.0.1:5500/Store%20stronghold.html" title="門市據點">門市據點</a>
+                                        <a href="Store_stronghold.html" title="門市據點">門市據點</a>
                                     </strong>
                                 </h5>
                                 <ul class="list-unstyled">
                                     <br>
-                                    <a href="http://127.0.0.1:5500/Store%20stronghold.html" title="北部據點">北部據點</a>
+                                    <a href="Store_stronghold.html" title="北部據點">北部據點</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/Store%20stronghold.html" title="中部據點">中部據點</a>
+                                    <a href="Store_stronghold.html" title="中部據點">中部據點</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/Store%20stronghold.html" title="南部據點">南部據點</a>
+                                    <a href="Store_stronghold.html" title="南部據點">南部據點</a>
                                     </br>
                                 </ul>
                             </div>
                             <div class="fat-footer">
                                 <h5>
                                     <strong>
-                                        <a href="http://127.0.0.1:5500/contact%20us.html" title="聯絡我們">聯絡我們</a>
+                                        <a href="contact_us.html" title="聯絡我們">聯絡我們</a>
                                     </strong>
                                 </h5>
                                 <ul class="list-unstyled">
                                     <br>
-                                    <a href="http://127.0.0.1:5500/contact%20us.html" title="北部公司">北部公司</a>
+                                    <a href="contact_us.html" title="北部公司">北部公司</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/contact%20us.html" title="中部公司">中部公司</a>
+                                    <a href="contact_us.html" title="中部公司">中部公司</a>
                                     </br>
                                     <br>
-                                    <a href="http://127.0.0.1:5500/contact%20us.html" title="南部公司">南部公司</a>
+                                    <a href="contact_us.html" title="南部公司">南部公司</a>
                                     </br>
                                 </ul>
                             </div>
@@ -239,6 +268,7 @@
             </div>
     </article>
 </section>
+     
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
