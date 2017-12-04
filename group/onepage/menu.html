@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>人才招募</title>
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/unslider.css">
+    <link rel="stylesheet" href="/css/unslider-dots.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/mouse.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/theme/theme-animate.css">
+    <link rel="stylesheet" href="/css/theme/theme-blog.css">
+    <link rel="stylesheet" href="/css/theme/theme-elements.css">
+    <link rel="stylesheet" href="/css/theme/theme-shop.css">
+    <link rel="stylesheet" href="/css/theme/theme.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+
+
+
+        * {
+            font-family: sans-serif;
+        }
+
+        #crouton ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            list-style: none;
+        }
+
+        #crouton li {
+            float: left;
+            margin: 0 10px;
+        }
+
+        #crouton a {
+            background: #ddd;
+            padding: .7em 1em;            
+            float: left;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+            position: relative;
+        }
+
+        #crouton li:first-child a {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #crouton li:last-child a {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        #crouton a:hover {
+            background: #99db76;
+        }
+
+        #crouton li:not(:first-child)>a::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -1.5em;
+            border-width: 1.5em 0 1.5em 1em;
+            border-style: solid;
+            border-color: #ddd #ddd #ddd transparent;
+            left: -1em;
+        }
+
+        #crouton li:not(:first-child)>a:hover::before {
+            border-color: #99db76 #99db76 #99db76 transparent;
+        }
+
+        #crouton li:not(:last-child)>a::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            margin-top: -1.5em;
+            border-top: 1.5em solid transparent;
+            border-bottom: 1.5em solid transparent;
+            border-left: 1em solid #ddd;
+            right: -1em;
+        }
+
+        #crouton li:not(:last-child)>a:hover::after {
+            border-left-color: #99db76;
+        }
+
+        .example-image {
+            width: 3rem;
+            border-radius: 4px;
+        }
+
+        .nav_logo {
+            text-align: center;
+        }
+
+        .type {
+            background-color: rgb(255, 218, 68);
+            width: 100%;
+            height: 75%;
+            line-height: 75px;
+            color: black;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color:rgb(233,85,19);">
+        <div class="container">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html">
+                <img class="" src="" alt="">
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html">
+                        <img class="example-image" src="images/SVG/telephone.svg" alt="">
+                        <span> 0800-000-000</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html">
+                        <img class="example-image" src="images/SVG/home-01.svg" alt="">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html">
+                        <img class="example-image" src="images/SVG/facebook-02.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color:rgb(255,218,68);">
+        <div class="container" style="max-width:1140px">
+            <a class="navbar-brand" href="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html" style="margin-right:-7%">
+                <img class="" src="images/logo/丹丹logo1.png" alt="http://127.0.0.1:5500/%E9%A6%96%E9%A0%81.html">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:7%;font-size:16px">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div id="crouton">
+                            <ul>
+                                <li>
+                                    <a href="#">最新消息</a>
+                                </li>
+                                <li>
+                                    <a href="#">美味丹丹</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:5500/Order%20online.html">線上點餐</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:5500/Branch%20information.html">分店資訊</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:5500/recruiting.html">人才招募</a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:5500/Join.html">加盟丹丹</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 內容 -->
+
+    <div class="container" style="padding-top:5%">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 mb-md" style="padding-top:2%">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-4">
+                        <a href="" title="人才招募">
+                            <div class="type">人才招募</div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-4">
+
+                        <a href="" title="培育人才">
+                            <div class="type">培育人才</div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-4">
+                        <a href="" title="職涯規劃">
+                            <div class="type">職涯規劃</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-8 mb-md">
+                <a href="">
+                    <img src="images/new/01.jpg" class="img-responsive img-rounded" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+   <!-- footer -->
+   <section>
+        <article>
+            <footer id="footer">
+                <div class="container_footer">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 mb-md d-none d-md-block">
+                            <div class="pad-width">
+                                <div class="fat-footer">
+                                    <h5>
+                                        <strong>
+                                            <a href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html#" title="最新消息" style="color: rgb(234,85,30);">最新消息</a>
+                                        </strong>
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html#" title="促銷活動">促銷活動</a>
+                                        </br>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html#" title="新店開幕">新店開幕</a>
+                                        </br>
+                                    </ul>                                    
+                                </div>
+                                <div class="fat-footer">
+                                    <h5>
+                                        <strong>
+                                            <a href="" title="美味丹丹" style="color: rgb(234,85,30);">美味丹丹</a>
+                                        </strong>
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html#" title="單點餐飲">單點餐飲</a>
+                                        </br>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html#" title="元氣早餐">元氣早餐</a>
+                                        </br>
+                                    </ul>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/bootstrap-%E9%97%9C%E6%96%BC%E7%90%86%E5%BF%B5.html#" title="超值早餐">超值早餐</a>
+                                        </br>
+                                    </ul>
+                                </div>
+                                <div class="fat-footer">
+                                    <h5>
+                                        <strong>
+                                            <a href="http://127.0.0.1:5500/Order%20online.html" title="線上點餐" style="color: rgb(234,85,30);">線上點餐</a>
+                                        </strong>
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/Order%20online.html" title="預定取餐" >預定取餐</a>
+                                        </br>
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/Order%20online.html" title="外送自取">外送自取</a>
+                                        </br>                                        
+                                </div>
+                                <div class="fat-footer">
+                                    <h5>
+                                        <strong>
+                                            <a href="http://127.0.0.1:5500/Branch%20information.html" title="分店資訊" style="color: rgb(234,85,30);">分店資訊</a>
+                                        </strong>
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/Branch%20information.html" title="全國門市">全國門市</a>
+                                        </br>
+                                    </ul>
+                                </div>
+                                <div class="fat-footer">
+                                    <h5>
+                                        <strong>
+                                            <a href="http://127.0.0.1:5500/recruiting.html" title="人才招募" style="color: rgb(234,85,30);">人才招募</a>
+                                        </strong>
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/recruiting.html" title="培育人才">培育人才</a>
+                                        </br>
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/recruiting.html" title="職涯規劃">職涯規劃</a>
+                                        </br>
+                                    </ul>
+                                </div>
+                                <div class="fat-footer">
+                                    <h5>
+                                        <strong>
+                                            <a href="http://127.0.0.1:5500/Join.html" title="加盟丹丹" style="color: rgb(234,85,30);">加盟丹丹</a>
+                                        </strong>
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/Join.html" title="品牌優勢">品牌優勢</a>
+                                        </br>
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/Join.html" title="加盟流程">加盟流程</a>
+                                        </br>
+                                        <br>
+                                        <a href="http://127.0.0.1:5500/Join.html" title="聯絡我們">聯絡我們</a>
+                                        </br>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-lg-4 col-md-4 col-sm-12 mb-md " style="text-align:center;">
+                            <a href="http://127.0.0.1:5500/index.html">
+                                <img class="nav_logo" src="images/logo/丹丹logo2.png" alt="http://127.0.0.1:5500/index.html">
+                                <h3>0800-000-000</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </article>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/unslider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.my-slider').unslider({
+                infinite: true,
+                arrows: {
+                    prev: '<a class="unslider-arrow prev"><i class="fa fa-chevron-left fa-5x" aria-hidden="true"></i></a>',
+                    next: '<a class="unslider-arrow next"><i class="fa fa-chevron-right fa-5x" aria-hidden="true"></i></a>',
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
